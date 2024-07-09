@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Box, Button, Grid } from "@mui/material";
-function Sidebar({open}) {
+function Sidebar({ open }) {
   const [section, setSection] = useState("1");
 
-  console.log(section)
+  console.log(section);
   return (
     <Box
       sx={{
@@ -15,8 +15,8 @@ function Sidebar({open}) {
         backgroundColor: "#151A30",
 
         top: "100px",
-        transform: open?"translateX(0)":"translateX(-105%)",
-        transition: "1s"
+        transform: open ? "translateX(0)" : "translateX(-105%)",
+        transition: "1s",
         // transform: "translateX(0)"
       }}
     >
@@ -28,19 +28,19 @@ function Sidebar({open}) {
         }}
       >
         <Box
-          sx={{ color: "white", fontSize: "18px" }}
+          sx={{ color: "white", fontSize: "18px", cursor: "pointer" }}
           onClick={() => setSection("1")}
         >
           1 Section
         </Box>
         <Box
-          sx={{ color: "white", fontSize: "18px" }}
+          sx={{ color: "white", fontSize: "18px", cursor: "pointer" }}
           onClick={() => setSection("2")}
         >
           2 Section
         </Box>
         <Box
-          sx={{ color: "white", fontSize: "18px" }}
+          sx={{ color: "white", fontSize: "18px", cursor: "pointer" }}
           onClick={() => setSection("3")}
         >
           3 Section
@@ -130,13 +130,11 @@ function Sidebar({open}) {
               <Button variant="contained">Two</Button>
               <Button variant="contained">four</Button>
 
-              
               <Button variant="contained">Two</Button>
               <Button variant="contained">four</Button>
 
               <Button variant="contained">one</Button>
               <Button variant="contained">Two</Button>
-           
 
               <Button variant="contained">one</Button>
               <Button variant="contained">Two</Button>
@@ -148,7 +146,7 @@ function Sidebar({open}) {
         <></>
       )}
 
-{section === "3" ? (
+      {section === "3" ? (
         <>
           <Box sx={{ border: "1px solid #1F273C" }}>
             <Box
@@ -162,7 +160,6 @@ function Sidebar({open}) {
             >
               <Button variant="contained">one</Button>
               <Button variant="contained">Two</Button>
-           
             </Box>
           </Box>
 
