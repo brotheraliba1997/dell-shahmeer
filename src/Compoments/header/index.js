@@ -1,80 +1,101 @@
 import React from "react";
-import { Box, Button, Grid } from "@mui/material";
-import { Margin } from "@mui/icons-material";
-function Header({toggleSidebar}) {
+import { Box, Typography } from "@mui/material";
+function Header({ toggleSidebar }) {
   return (
     <Box
       sx={{
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        padding: "20px",
+        padding: { xs: "15px 7px", sm: "20px" },
         position: "fixed",
         top: "0px",
         left: "0px",
         right: "0px",
         // width "100%",
-        backgroundColor: "#151A30"
-   
+        backgroundColor: "#151A30",
       }}
     >
-      <Box  sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "0px 20px",
-        width: "100%",
-        backgroundColor: "#202A43",
-        height: "60px",
-      }}>
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "space-between",
           alignItems: "center",
-          gap: "10px",
+          padding: { xs: "0 5px", sm: "0px 20px" },
+          width: "100%",
+          backgroundColor: "#202A43",
+          height: "60px",
         }}
       >
-        <Box sx={{ padding: "20px", backgroundColor: "#3EA48C" }} onClick={toggleSidebar}> </Box>
         <Box
           sx={{
-           md:{ padding: "10px 60px"},
-           sm:{ padding: "5px 15px"},
-            backgroundColor: "#3EA48C",
-            color: "black",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "10px",
           }}
         >
-          {" "}
-          <h6 style={{ padding: 0, margin: 0 }}>Logo</h6>{" "}
+          <Box
+            sx={{
+              padding: "20px",
+              backgroundColor: "#3EA48C",
+              cursor: "pointer",
+            }}
+            onClick={toggleSidebar}
+          ></Box>
+          <Box
+            sx={{
+              padding: { xs: "10px", sm: "7px 15px", md: "10px 30px" },
+              backgroundColor: "#3EA48C",
+              color: "black",
+              cursor: "pointer",
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{ fontSize: { xs: "12px", sm: "16px" } }}
+              fontWeight={600}
+            >
+              Logo
+            </Typography>
+          </Box>
+        </Box>
+        <Box sx={{ display: "flex", gap: "10px" }}>
+          <Box
+            sx={{
+              padding: { xs: "10px", sm: "10px 40px" },
+              cursor: "pointer",
+              backgroundColor: "#3EA48C",
+              color: "black",
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{ fontSize: { xs: "12px", sm: "16px" } }}
+              fontWeight={600}
+            >
+              create free acount
+            </Typography>
+          </Box>
+
+          <Box
+            sx={{
+              padding: { xs: "10px", sm: "10px 40px" },
+              backgroundColor: "#3EA48C",
+              color: "black",
+              cursor: "pointer",
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{ fontSize: { xs: "12px", sm: "16px" } }}
+              fontWeight={600}
+            >
+              Login
+            </Typography>
+          </Box>
         </Box>
       </Box>
-
-      <Box sx={{display: "flex" , gap: "10px"}}>
-      <Box
-          sx={{
-            padding: "10px 40px",
-            
-            backgroundColor: "#3EA48C",
-            color: "black",
-            
-          }}
-        >
-          {" "}
-          <h6 style={{ padding: 0, margin: 0 }}>create free acount</h6>{" "}
-        </Box>
-
-        <Box
-          sx={{
-            padding: "10px 40px",
-            backgroundColor: "#3EA48C",
-            color: "black",
-          }}
-        >
-          {" "}
-          <h6 style={{ padding: 0, margin: 0 }}>Login</h6>{" "}
-        </Box>
-        </Box>
-        </Box>
     </Box>
   );
 }
