@@ -11,15 +11,17 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   color: theme.palette.text.secondary,
 }));
-function Main() {
+function Main({open}) {
   return (
     <Box
       sx={{
-        width: "calc(100% - 300px)",
-        marginLeft: "300px",
+        width: open?"calc(100% - 300px)": "100%",
+        marginLeft: open?"300px":"0px",
       
         height: "100%",
         paddingTop: "80px",
+        transition: "all 1s"
+
       }}
     >
       <Container maxWidth="xl">

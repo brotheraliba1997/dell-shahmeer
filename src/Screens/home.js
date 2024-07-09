@@ -1,6 +1,6 @@
 import { Box, Button, Grid } from "@mui/material";
 import { Container } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 
 import Paper from "@mui/material/Paper";
@@ -17,12 +17,14 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function Home() {
+  const [sidebar, setSidebar]= useState(true);
+
   return (
     <Box >
-      <Header />
+      <Header toggleSidebar={()=>setSidebar(!sidebar)} />
       <Box sx={{display: "flex"}}>
-        <Sidebar />
-        <Main />
+        <Sidebar open={sidebar} />
+        <Main open={sidebar}  />
       </Box>
     </Box>
   );

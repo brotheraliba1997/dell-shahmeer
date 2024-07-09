@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Grid } from "@mui/material";
 import { Margin } from "@mui/icons-material";
-function Header() {
+function Header({toggleSidebar}) {
   return (
     <Box
       sx={{
@@ -35,7 +35,7 @@ function Header() {
           gap: "10px",
         }}
       >
-        <Box sx={{ padding: "20px", backgroundColor: "#3EA48C" }}> </Box>
+        <Box sx={{ padding: "20px", backgroundColor: "#3EA48C" }} onClick={toggleSidebar}> </Box>
         <Box
           sx={{
             padding: "10px 60px",

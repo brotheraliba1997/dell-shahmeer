@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, Button, Grid } from "@mui/material";
-function Sidebar() {
+function Sidebar({open}) {
   const [section, setSection] = useState("1");
 
   console.log(section)
@@ -15,6 +15,9 @@ function Sidebar() {
         backgroundColor: "#151A30",
 
         top: "100px",
+        transform: open?"translateX(0)":"translateX(-105%)",
+        transition: "1s"
+        // transform: "translateX(0)"
       }}
     >
       <Box
