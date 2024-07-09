@@ -11,7 +11,6 @@ function Sidebar({ open }) {
         border: "1px solid black",
         height: "100%",
         position: "fixed",
-        // margin: "10px 0",
         backgroundColor: "#151A30",
 
         top: "100px",
