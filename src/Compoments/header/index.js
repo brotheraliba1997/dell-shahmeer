@@ -38,7 +38,8 @@ function Header() {
         <Box sx={{ padding: "20px", backgroundColor: "#3EA48C" }}> </Box>
         <Box
           sx={{
-            padding: "10px 60px",
+           md:{ padding: "10px 60px"},
+           sm:{ padding: "5px 15px"},
             backgroundColor: "#3EA48C",
             color: "black",
           }}
@@ -52,6 +53,7 @@ function Header() {
       <Box
           sx={{
             padding: "10px 40px",
+            
             backgroundColor: "#3EA48C",
             color: "black",
           }}
