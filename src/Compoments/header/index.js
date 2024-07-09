@@ -54,6 +54,7 @@ function Header({toggleSidebar}) {
             padding: "10px 40px",
             backgroundColor: "#3EA48C",
             color: "black",
+            
           }}
         >
           {" "}
