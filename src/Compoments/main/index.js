@@ -15,8 +15,10 @@ function Main() {
   return (
     <Box
       sx={{
-        width: "calc(100% - 300px)",
-        marginLeft: "300px",
+        md:{width: "calc(100% - 300px)" , marginLeft: "300px",},
+        sm:{width: "100%" ,  marginLeft: "0px"},
+
+       
       
         height: "100%",
         paddingTop: "80px",
@@ -24,82 +26,82 @@ function Main() {
     >
       <Container maxWidth="xl">
         <Grid container spacing={4}>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item md={3}>
+          <Grid item  xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ height: "200px", backgroundColor: "#6168e5" }}>
               xs=6 md=8
             </Box>

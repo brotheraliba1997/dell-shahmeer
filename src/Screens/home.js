@@ -20,10 +20,11 @@ function Home() {
   return (
     <Box >
       <Header />
-      <Box sx={{display: "flex"}}>
+      {/* <Box sx={{display: "flex"}}>
         <Sidebar />
         <Main />
-      </Box>
+      </Box> */}
+      <Main />
     </Box>
   );
 }
