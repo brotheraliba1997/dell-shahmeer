@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Box, Button, Grid } from "@mui/material";
-function Sidebar({ open }) {
+function Sidebar({ open, handleClick }) {
   const [section, setSection] = useState("1");
 
-  console.log(section);
   return (
     <Box
       sx={{
@@ -27,19 +26,37 @@ function Sidebar({ open }) {
         }}
       >
         <Box
-          sx={{ color: "white", fontSize: "18px", cursor: "pointer" }}
+          sx={{
+            color: "white",
+            fontSize: "18px",
+            cursor: "pointer",
+            backgroundColor: `${section === "1" && "gray"}`,
+            padding: "10px 5px",
+          }}
           onClick={() => setSection("1")}
         >
           1 Section
         </Box>
         <Box
-          sx={{ color: "white", fontSize: "18px", cursor: "pointer" }}
+          sx={{
+            color: "white",
+            fontSize: "18px",
+            cursor: "pointer",
+            backgroundColor: `${section === "2" && "gray"}`,
+            padding: "10px 5px",
+          }}
           onClick={() => setSection("2")}
         >
           2 Section
         </Box>
         <Box
-          sx={{ color: "white", fontSize: "18px", cursor: "pointer" }}
+          sx={{
+            color: "white",
+            fontSize: "18px",
+            cursor: "pointer",
+            backgroundColor: `${section === "3" && "gray"}`,
+            padding: "10px 5px",
+          }}
           onClick={() => setSection("3")}
         >
           3 Section
@@ -58,7 +75,9 @@ function Sidebar({ open }) {
                 margin: "10px 0px",
               }}
             >
-              <Button variant="contained">one</Button>
+              <Button variant="contained" onClick={handleClick}>
+                one
+              </Button>
               <Button variant="contained">Two</Button>
               <Button variant="contained">four</Button>
             </Box>
