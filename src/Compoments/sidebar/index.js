@@ -10,7 +10,7 @@ function Sidebar({ open, handleClick }) {
         border: "1px solid black",
         height: "100%",
         position: "fixed",
-        backgroundColor: "#151A30",
+        backgroundColor: "rgb(32, 42, 67)",
 
         top: "100px",
         transform: open ? "translateX(0)" : "translateX(-105%)",
