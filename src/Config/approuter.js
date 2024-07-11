@@ -5,8 +5,6 @@ import Chat from "../Screens/chat";
 
 function Approuter() {
   return (
- 
-
     <Router>
       <Routes>
         <Route path="/" element={<Home />}></Route>
