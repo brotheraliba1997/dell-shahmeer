@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-function Header({ toggleSidebar }) {
+function Header({ toggleSidebar, hasSidebar  }) {
   return (
     <Box
       sx={{
@@ -35,6 +35,7 @@ function Header({ toggleSidebar }) {
             gap: "10px",
           }}
         >
+          {hasSidebar && 
           <Box
             sx={{
               padding: "20px",
@@ -43,6 +44,7 @@ function Header({ toggleSidebar }) {
             }}
             onClick={toggleSidebar}
           ></Box>
+        }
           <Box
             sx={{
               padding: { xs: "10px", sm: "7px 15px", md: "10px 30px" },

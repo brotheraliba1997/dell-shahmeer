@@ -79,13 +79,13 @@ function Home() {
   };
 
   return (
-    <Box>
-      <Header toggleSidebar={() => setSidebar(!sidebar)} />
+    <div className="homepage" >
+      <Header toggleSidebar={() => setSidebar(!sidebar)}  hasSidebar={true} />
       <Box sx={{ display: "flex" }}>
         <Sidebar open={sidebar} handleClick={handleClick} />
         <Main open={sidebar} items={items} containerRef={containerRef} />
       </Box>
-    </Box>
+    </div>
   );
 }
 

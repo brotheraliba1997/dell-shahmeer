@@ -1,7 +1,23 @@
 body {
 
   background-color: #151A30;
+  /* padding: 20px; */
+  height: 100vh;
+  width: 100%;
+}
+
+.homepage{
+  background-color: #151A30 ;
   padding: 20px;
   height: 100vh;
   width: 100%;
+}
+
+
+
+.detail{
+  background-color: black !important;
+  height: 100vh;
+  width: 100%;
+  padding: 10px !important;
 }
