@@ -30,7 +30,7 @@ function Sidebar({ open, handleClick }) {
             color: "white",
             fontSize: "18px",
             cursor: "pointer",
-            backgroundColor: `${section === "1" && "gray"}`,
+            backgroundColor: `${section === "1" && "#1F2942"}`,
             padding: "10px 5px",
           }}
           onClick={() => setSection("1")}
@@ -42,7 +42,7 @@ function Sidebar({ open, handleClick }) {
             color: "white",
             fontSize: "18px",
             cursor: "pointer",
-            backgroundColor: `${section === "2" && "gray"}`,
+            backgroundColor: `${section === "2" && "#1F2942"}`,
             padding: "10px 5px",
           }}
           onClick={() => setSection("2")}
@@ -54,7 +54,7 @@ function Sidebar({ open, handleClick }) {
             color: "white",
             fontSize: "18px",
             cursor: "pointer",
-            backgroundColor: `${section === "3" && "gray"}`,
+            backgroundColor: `${section === "3" && "#1F2942"}`,
             padding: "10px 5px",
           }}
           onClick={() => setSection("3")}
@@ -75,11 +75,46 @@ function Sidebar({ open, handleClick }) {
                 margin: "10px 0px",
               }}
             >
-              <Button variant="contained" onClick={handleClick}>
+              <Button
+                variant="contained"
+                onClick={handleClick}
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
                 one
               </Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
             </Box>
           </Box>
 
@@ -94,21 +129,165 @@ function Sidebar({ open, handleClick }) {
                 flexWrap: "wrap",
               }}
             >
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
 
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
 
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
 
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
             </Box>
           </Box>
         </>
@@ -127,9 +306,45 @@ function Sidebar({ open, handleClick }) {
                 margin: "10px 0px",
               }}
             >
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
             </Box>
           </Box>
 
@@ -144,19 +359,139 @@ function Sidebar({ open, handleClick }) {
                 flexWrap: "wrap",
               }}
             >
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
 
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
 
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
 
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
             </Box>
           </Box>
         </>
@@ -176,8 +511,32 @@ function Sidebar({ open, handleClick }) {
                 margin: "10px 0px",
               }}
             >
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
             </Box>
           </Box>
 
@@ -192,21 +551,165 @@ function Sidebar({ open, handleClick }) {
                 flexWrap: "wrap",
               }}
             >
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
 
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
 
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
 
-              <Button variant="contained">one</Button>
-              <Button variant="contained">Two</Button>
-              <Button variant="contained">four</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                one
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                Two
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  "&:focus": {
+                    backgroundColor: "#3EA48C",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#3EA48C",
+                  },
+                }}
+              >
+                four
+              </Button>
             </Box>
           </Box>
         </>
