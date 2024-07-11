@@ -7,7 +7,8 @@ import Paper from "@mui/material/Paper";
 
 function Chat() {
   const [sidebar, setSidebar] = useState(true);
-
+  const [total, setTotal] = useState(0);
+  const [section, setSection] = useState("1");
   const [height, setHeight] = useState(window.innerHeight);
 
   useEffect(() => {
@@ -83,6 +84,11 @@ function Chat() {
                         justifyContent: "center",
                         alignItems: "center",
                       }}
+                      onClick={() => {
+                        if (total > 0) {
+                          setTotal((prev) => prev - 1);
+                        }
+                      }}
                     >
                       -
                     </Box>
@@ -99,7 +105,7 @@ function Chat() {
                         alignItems: "center",
                       }}
                     >
-                      0
+                      {total}
                     </Box>
 
                     <Box
@@ -112,6 +118,9 @@ function Chat() {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
+                      }}
+                      onClick={() => {
+                        setTotal((prev) => prev + 1);
                       }}
                     >
                       +
@@ -328,7 +337,9 @@ function Chat() {
                 <Box
                   sx={{
                     padding: { xs: "10px", sm: "0px 50px" },
-                    backgroundColor: "#151A2E",
+                    backgroundColor: `${
+                      section === "1" ? "#1F2942" : "#151A2E"
+                    }`,
                     color: "black",
                     cursor: "pointer",
                     display: "flex",
@@ -336,6 +347,7 @@ function Chat() {
                     alignItems: "center",
                     color: "white",
                   }}
+                  onClick={() => setSection("1")}
                 >
                   <Typography
                     variant="p"
@@ -353,7 +365,9 @@ function Chat() {
                 <Box
                   sx={{
                     padding: { xs: "10px", sm: "0px 50px" },
-                    backgroundColor: "#1F2942",
+                    backgroundColor: `${
+                      section === "2" ? "#1F2942" : "#151A2E"
+                    }`,
                     color: "black",
                     cursor: "pointer",
                     display: "flex",
@@ -361,6 +375,7 @@ function Chat() {
                     alignItems: "center",
                     color: "white",
                   }}
+                  onClick={() => setSection("2")}
                 >
                   <Typography
                     variant="p"
@@ -378,8 +393,9 @@ function Chat() {
                 <Box
                   sx={{
                     padding: { xs: "10px", sm: "0px 50px" },
-                    backgroundColor: "#151A2E",
-
+                    backgroundColor: `${
+                      section === "3" ? "#1F2942" : "#151A2E"
+                    }`,
                     color: "black",
                     cursor: "pointer",
                     display: "flex",
@@ -387,6 +403,8 @@ function Chat() {
                     alignItems: "center",
                     color: "white",
                   }}
+                  onClick={() => setSection("3")}
+
                 >
                   <Typography
                     variant="p"
