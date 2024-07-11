@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-function Header({ toggleSidebar, hasSidebar  }) {
+import { useNavigate } from "react-router-dom";
+function Header({ toggleSidebar, hasSidebar }) {
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -35,16 +37,16 @@ function Header({ toggleSidebar, hasSidebar  }) {
             gap: "10px",
           }}
         >
-          {hasSidebar && 
-          <Box
-            sx={{
-              padding: "20px",
-              backgroundColor: "#3EA48C",
-              cursor: "pointer",
-            }}
-            onClick={toggleSidebar}
-          ></Box>
-        }
+          {hasSidebar && (
+            <Box
+              sx={{
+                padding: "20px",
+                backgroundColor: "#3EA48C",
+                cursor: "pointer",
+              }}
+              onClick={toggleSidebar}
+            ></Box>
+          )}
           <Box
             sx={{
               padding: { xs: "10px", sm: "7px 15px", md: "10px 30px" },
@@ -70,6 +72,7 @@ function Header({ toggleSidebar, hasSidebar  }) {
               backgroundColor: "#3EA48C",
               color: "black",
             }}
+            onClick={() => navigate("/chat")}
           >
             <Typography
               variant="h6"
