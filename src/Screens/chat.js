@@ -34,11 +34,11 @@ function Chat() {
     <div className="detail">
       <Header toggleSidebar={() => setSidebar(!sidebar)} hasSidebar={false} />
 
-      <Box sx={{ marginTop: "80px", height: { xs: "100%", md: height - 90 } }}>
+      <Box sx={{ marginTop: "80px", height: { xs: "100%"} }}>
         <Grid
           container
           spacing={1}
-          sx={{ height: { xs: "100%", md: (height - 60) / 2 } }}
+          sx={{ height: { xs: "100%", md: "calc(100vh - 80px)" } }}
           paddingBottom={{ xs: 1, md: 0 }}
         >
           {/* <Box> */}
@@ -247,7 +247,7 @@ function Chat() {
         <Grid
           container
           spacing={1}
-          sx={{ height: { xs: "100%", md: (height - 100) / 2 } }}
+          sx={{ height: { xs: "100%", md: "calc(100vh - 120px)" } }}
         >
           <Grid item xs={12} md={4}>
             <Item
@@ -404,7 +404,6 @@ function Chat() {
                     color: "white",
                   }}
                   onClick={() => setSection("3")}
-
                 >
                   <Typography
                     variant="p"
